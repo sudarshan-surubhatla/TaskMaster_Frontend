@@ -1,0 +1,25 @@
+.task-info{
+    text-justify: distribute;
+    word-wrap: break-word;
+    transition: all 200ms ease-in-out;
+}
+
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .completed-task {
+    text-decoration: line-through;
+  }
+  
+  .completed-text {
+    text-decoration: line-through;
+  }
+
+  .edit-input, .edit-textarea , .edit-date{
+    background-color:transparent;
+    border:none ;
+    
+  }

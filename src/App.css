@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #e0defa;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* customize scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track {
+  background: rgba(171,165,237,1);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+::-webkit-scrollbar-thumb {
+  background:rgba(71,65,132,1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(71,65,132,1)
+}
+.active, .logout{
   color: white;
+  background-color: rgb(58, 58, 197);
+  font-weight: bolder;
+  padding: 5px 10px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);
 }
 
-.App-link {
-  color: #61dafb;
+task-container{
+  height: 90vh;
+  background-color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.addTask{
+  height: 10vh;
+  background-color: transparent;
+  padding: 10px;
+}
+.outlet{
+  height:80vh;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 1rem;
+  overflow: auto;
+  transition: all 200ms ease-in-out;
+}
+.indicator{
+  display: flex;
+  align-items: center;
+  height:10vh;
+  margin:auto 10px;
+}
+
+.active {
+  position: relative; 
+  color: black;
+  background-color:#c8c5eb; 
+  
+  padding: 5px 10px;
+  border-radius:15px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+
+
+  &:hover {
+    background-color: #bbb7e9; 
   }
 }
+

@@ -1,0 +1,16 @@
+.toast{
+    display: none;
+}
+
+form {
+    margin-top: 30px;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom:30px ;
+}
+textarea {
+    margin-top: 10px;
+}
+
